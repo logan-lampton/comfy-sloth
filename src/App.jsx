@@ -16,7 +16,6 @@ import {
 function App() {
   return (
     <div>
-      <h4>comfy sloth starter</h4>
       <Router>
         <Navbar />
         <Sidebar />

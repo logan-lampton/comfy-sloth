@@ -9,6 +9,8 @@ import CartButtons from "./CartButtons";
 import { useUserContext } from "../context/user_context";
 
 const Sidebar = () => {
+  const test = useProductsContext();
+  console.log(test);
   const isOpen = false;
   return (
     <SidebarContainer>
@@ -21,12 +23,12 @@ const Sidebar = () => {
         </div>
         <ul className='links'>
           {links.map((link) => {
-            const {id, text, url} = link;
+            const { id, text, url } = link;
             return (
               <li key={id}>
                 <Link to={url}>{text}</Link>
               </li>
-            )
+            );
           })}
           <li>
             <Link to='/checkout'>Checkout</Link>

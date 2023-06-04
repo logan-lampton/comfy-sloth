@@ -28,9 +28,9 @@ function App() {
           <Route
             path='/checkout'
             element={
-              <PrivateRoute>
+              // <PrivateRoute>
                 <Checkout />
-              </PrivateRoute>
+              // </PrivateRoute>
             }
           />
           <Route path='*' element={<Error />} />
